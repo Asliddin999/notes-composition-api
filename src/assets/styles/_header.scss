@@ -1,0 +1,56 @@
+.header{
+    background: #F3EDF7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    height: 74px;
+    overflow: hidden;
+    padding: 18px 21px;
+    &__select{
+        position: absolute;
+        left: 0;
+        display: block;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 22px;
+        line-height: 28px;
+        color: #1c1b1f;
+    }
+    &__search{
+        background: transparent;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+    &__notes{
+        position: relative;
+        &-enter-active, &-leave-active{
+            transition: 0.3s linear;
+        }
+        &-enter-from, &-leave-to{
+            opacity: 0;
+            transform: translateY(100px);
+        }
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    &__input{
+        display: block;
+        width: 90%;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000;
+        background: transparent;
+        &::placeholder{
+            color: #9d9d9d;
+        }
+    }
+}
